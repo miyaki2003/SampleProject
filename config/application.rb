@@ -15,15 +15,6 @@ module ProjectSample
     # not contain `.rb` files, or that should not be reloaded or eager loaded.
     # Common ones are `templates`, `generators`, or `middleware`, for example.
     config.autoload_lib(ignore: %w(assets tasks))
-    config.generators do |g|
-      # helperファイルの設定
-      # testファイルの設定
-      # ルーティングの記述の設定
-      g.skip_routes true
-      g.helper false
-      g.test_framework nil
-
-    end
 
     # Configuration for the application, engines, and railties goes here.
     #
